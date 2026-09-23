@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css" />
-    <title>JedX Learning Platform</title>
+    <title>K-IdolX Training Platform</title>
 
     <!-- Icon Library -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -18,12 +18,13 @@
   <body>
     <!-- Navbar Start-->
     <nav class="navbar">
-      <a href="#" class="logo-navbar">Jed<span>X</span></a>
+      <a href="#" class="logo-navbar">K-Idol<span>X</span></a>
       <div class="navbar-nav">
-        <a href="#">Beranda</a>
+        <a href="#home">Beranda</a>
         <a href="#about">Tentang</a>
-        <a href="#course">Kelas</a>
-        <a href="#contact">Kontak</a>
+        <a href="#course">Modul Training</a>
+        <a href="#profile">Identitas Trainee</a>
+        <a href="#contact">Kontak Audisi</a>
       </div>
 
       <div class="navbar-extra">
@@ -38,29 +39,28 @@
     <!-- Main Start -->
     <section class="hero" id="home">
       <main class="content">
-        <h1>Belajar Lebih Mudah, Tumbuh Lebih Cepat</h1>
-        <p>Platform pembelajaran yang membantu kamu belajar dengan mudah, mengembangkan keterampilan, dan mencapai potensi terbaikmu.</p>
-        <a href="" class="cta">Gabung</a>
+        <h1>Wujudkan Impian Debut Menjadi Bintang K-Pop</h1>
+        <p>Platform pelatihan idol interaktif untuk mengasah vokal, koreografi dance, stage presence, dan aura visual bersama para mentor profesional.</p>
+        <a href="#course" class="cta">Daftar Audisi</a>
       </main>
 
       <div class="hero-image">
-        <img src="/assets/hero.png" alt="" />
+        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="K-Pop Stage" />
       </div>
     </section>
     <!-- Main End -->
 
     <!-- About Section Start -->
     <section class="about" id="about">
-      <h2>Tentang Kami</h2>
+      <h2>Tentang Akademia</h2>
       <div class="row">
         <div class="about-img">
-          <img src="/assets/about.png" alt="" />
+          <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" alt="Dance Studio" />
         </div>
         <div class="content">
-          <h3>Kenapa memilih JedX Learning Platform?</h3>
+          <h3>Kenapa Memilih K-IdolX Academy?</h3>
           <p>
-            JedX Learning Platform adalah platform pembelajaran yang dirancang untuk membantu kamu belajar dengan lebih mudah, fleksibel, dan menyenangkan. Kami menyediakan berbagai kelas dan materi untuk menambah pengetahuan serta
-            mengembangkan keterampilan sesuai minat dan kebutuhanmu. Dengan pengalaman belajar yang sederhana dan mudah dipahami, JedX hadir untuk mendukung setiap langkahmu dalam berkembang dan mencapai potensi terbaik.
+            K-IdolX Academy adalah platform pelatihan modern yang dirancang khusus untuk kamu yang ingin melangkah ke industri K-Pop. Kami menyediakan kurikulum komprehensif mulai dari teknik vokal dasar, isolasi gerakan dance, ekspresi panggung, hingga persiapan audisi agensi musik internasional.
           </p>
         </div>
       </div>
@@ -69,17 +69,34 @@
 
     <!-- Course Section Start -->
     <section class="course" id="course">
-      <h2>Kelas yang tersedia</h2>
-      <p>Pilih kelas yang sesuai dengan minatmu dan kembangkan keterampilanmu bersama JedX.</p>
+      <h2>Modul Training K-Pop</h2>
+      <p>Pilih bidang spesialisasi yang ingin kamu kuasai dan tingkatkan performa panggungmu.</p>
 
       <div class="row" id="course-list"></div>
     </section>
     <!-- Course Section End -->
 
+    <!-- Profile Section Start (Identitas Tugas) -->
+    <section class="about" id="profile">
+      <h2>Profil Trainee (Identitas Mahasiswa)</h2>
+      <div class="row">
+        <div class="content" style="text-align: center; width: 100%;">
+          <div style="background-color: #161224; border: 1px solid var(--primary-color); padding: 2rem; border-radius: 1rem; max-width: 50rem; margin: auto;">
+            <h3>Data Mahasiswa</h3>
+            <p style="font-weight: 500; margin-top: 1rem;">Nama: [Isi Nama Lengkap Kamu]</p>
+            <p style="font-weight: 500;">NIM: [Isi NIM Kamu]</p>
+            <p style="font-weight: 500;">Kelas: [Isi Kelas Kamu]</p>
+            <p style="font-weight: 500; color: var(--primary-color);">Status Trainee: Active Trainee (Level 2)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Profile Section End -->
+
     <!-- Contact Section Start -->
     <section id="contact" class="contact">
-      <h2>Kontak Kami</h2>
-      <p>Pilih kelas yang sesuai dengan minatmu dan kembangkan keterampilanmu bersama JedX.</p>
+      <h2>Hubungi Management Audisi</h2>
+      <p>Punya pertanyaan seputar jadwal latihan, konsultasi vokal, atau jadwal audisi? Kirimkan pesanmu di sini.</p>
 
       <div class="row">
         <iframe
@@ -93,18 +110,18 @@
         <form action="">
           <div class="input-group">
             <i data-feather="user"> </i>
-            <input type="text" placeholder="nama" />
+            <input type="text" placeholder="Nama / Stage Name" />
           </div>
           <div class="input-group">
             <i data-feather="mail"> </i>
-            <input type="text" placeholder="email" />
+            <input type="text" placeholder="Email" />
           </div>
           <div class="input-group">
             <i data-feather="phone"> </i>
-            <input type="number" placeholder="nomor hp" />
+            <input type="number" placeholder="Nomor WhatsApp" />
           </div>
 
-          <button type="submit" class="btn">Kirim pesan</button>
+          <button type="submit" class="btn">Kirim Pesan Audisi</button>
         </form>
       </div>
     </section>
@@ -115,15 +132,17 @@
       <div class="socials">
         <a href="#"><i data-feather="instagram"></i></a>
         <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="youtube"></i></a>
       </div>
       <div class="links">
         <a href="#home">Beranda</a>
         <a href="#about">Tentang</a>
-        <a href="#course">kelas</a>
+        <a href="#course">Modul</a>
+        <a href="#profile">Profil</a>
         <a href="#contact">Kontak</a>
       </div>
       <div>
-        <p>Created by <a href="">Mochamad Irfan Hidayat. | &copy;2026</a></p>
+        <p class="credit">Created by <a href="#" style="color: var(--primary-color);">[Isi Nama Kamu]</a> | &copy;2026 K-IdolX Academy</p>
       </div>
     </footer>
     <!-- Footer Section End-->

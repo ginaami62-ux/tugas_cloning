@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #44b4ba;
-  --secondary-color: #d1d3d4;
-  --bg-color: #0a0a0a;
+  --primary-color: #ff2a85;
+  --secondary-color: #e0aaff;
+  --bg-color: #0b0914;
 }
 
 * {
@@ -30,8 +30,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: var(--bg-color);
-  border-bottom: 1px solid var(--primary-color);
+  background-color: rgba(11, 9, 20, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 42, 133, 0.3);
   position: fixed;
   top: 0;
   left: 0;
@@ -46,7 +47,7 @@ body {
 }
 
 .navbar .logo-navbar span {
-  color: #44b4ba;
+  color: var(--primary-color);
 }
 
 .navbar .navbar-nav a {
@@ -103,36 +104,36 @@ body {
 }
 
 .hero .content h1 {
-  font-size: 4em;
+  font-size: 4rem;
   color: white;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  text-shadow: 0 0 15px rgba(255, 42, 133, 0.4);
 }
 
 .hero .content p {
   font-size: 1.5rem;
   margin-top: 1rem;
   line-height: 1.5;
-  font-weight: 100;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-  color: white;
+  font-weight: 300;
+  color: #d1d3d4;
 }
 
 .hero .content .cta {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   display: inline-block;
   padding: 1rem 3rem;
   color: white;
   font-size: 1.4rem;
+  font-weight: 600;
   background-color: var(--primary-color);
-  border-radius: 0.5rem;
-  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
-  transition: 0.2s;
+  border-radius: 2rem;
+  box-shadow: 0 0 20px rgba(255, 42, 133, 0.4);
+  transition: 0.3s;
 }
 
 .hero .content .cta:hover {
-  color: #0a0a0a;
-  background-color: white;
-  transform: scale(0.95);
+  color: white;
+  background-color: #d80062;
+  transform: translateY(-3px);
 }
 
 .hero .hero-image {
@@ -144,12 +145,13 @@ body {
 
 .hero .hero-image img {
   width: 100%;
-  max-width: 900px;
-  height: auto;
-  object-fit: contain;
+  max-width: 500px;
+  border-radius: 2rem;
+  box-shadow: 0 0 30px rgba(255, 42, 133, 0.2);
+  object-fit: cover;
 }
 
-/* About sectieon */
+/* About section */
 .about,
 .course,
 .contact {
@@ -162,10 +164,13 @@ body {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
+  color: white;
 }
 
 .about .row {
   display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .about .row .about-img {
@@ -174,6 +179,7 @@ body {
 
 .about .row .about-img img {
   width: 100%;
+  border-radius: 1.5rem;
 }
 
 .about .row .content {
@@ -184,28 +190,32 @@ body {
 .about .row .content h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 .about .row .content p {
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.6;
+  color: #d1d3d4;
 }
 
-/* course section */
+/* Course section */
 
 .course h2,
 .contact h2 {
   margin-bottom: 1rem;
 }
+
 .course p,
 .contact p {
   text-align: center;
-  max-width: 30rem;
+  max-width: 35rem;
   margin: auto;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.6;
+  color: #d1d3d4;
 }
 
 .course .row {
@@ -216,17 +226,17 @@ body {
 }
 
 .menu-card {
-  background-color: var(--bg-color);
-  border: 1px solid #222;
+  background-color: #141022;
+  border: 1px solid #28213b;
   border-radius: 1rem;
   overflow: hidden;
-  transition: 0.3 ease;
+  transition: 0.3s ease;
 }
 
 .menu-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-5px);
   border-color: var(--primary-color);
-  box-shadow: 0 10px 30px rgba(68, 180, 186, 0.15);
+  box-shadow: 0 10px 30px rgba(255, 42, 133, 0.25);
 }
 
 .menu-card img {
@@ -242,17 +252,24 @@ body {
 
 .menu-card-content span {
   display: inline-block;
-  color: white;
+  color: var(--primary-color);
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
 }
+
+.menu-card-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
 .menu-card-content p {
-  color: white;
+  color: #b0aeb8;
   font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 1rem;
   display: -webkit-box;
+  -webkit-line-clamp: 2;
   line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -260,15 +277,15 @@ body {
 
 .menu-card-content small {
   display: block;
-  color: white;
+  color: var(--secondary-color);
   font-size: 0.9rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .menu-card-content strong {
   display: block;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -277,7 +294,7 @@ body {
   text-align: center;
   padding: 0.8rem 1rem;
   background-color: var(--primary-color);
-  color: black;
+  color: white;
   border-radius: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
@@ -293,7 +310,9 @@ body {
 .contact .row {
   display: flex;
   margin-top: 2rem;
-  background-color: #222;
+  background-color: #141022;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .contact .row .map {
@@ -304,61 +323,66 @@ body {
 
 .contact .row form {
   flex: 1 1 45rem;
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
   text-align: center;
 }
 
 .contact .row form .input-group {
   display: flex;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   background-color: var(--bg-color);
-  border: 1px solid #eee;
-  padding-left: 2rem;
+  border: 1px solid #28213b;
+  padding-left: 1.5rem;
+  border-radius: 0.5rem;
 }
 
 .contact .row form .input-group input {
   width: 100%;
-  padding: 2rem;
-  font-size: 1.7rem;
+  padding: 1.2rem;
+  font-size: 1.3rem;
   background: none;
   color: white;
 }
 
 .contact .row form button {
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: inline-block;
   padding: 1rem 3rem;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: white;
   background-color: var(--primary-color);
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+
+.contact .row form button:hover {
+  background-color: #d80062;
 }
 
 /* Footer */
 footer {
-  background-color: var(--bg-color);
+  background-color: #06050d;
   text-align: center;
-  padding: 1rem 0 3rem;
-  margin-top: 3rem;
-}
-
-footer .socials {
-  padding: 1rem 0;
+  padding: 2rem 0 3rem;
+  margin-top: 5rem;
+  border-top: 1px solid #1e192d;
 }
 
 footer .socials a {
   color: white;
   margin: 1rem;
 }
+
 footer .socials a:hover,
 footer .links a:hover {
   color: var(--primary-color);
 }
 
 footer .links {
-  margin-bottom: 1.4rem;
+  margin: 1.4rem 0;
 }
 
 footer .links a {
@@ -367,25 +391,20 @@ footer .links a {
 }
 
 footer .credit {
-  font-size: 0.8rem;
-}
-footer .credit a {
-  color: #0a0a0a;
-  font-weight: 700;
+  font-size: 1rem;
+  color: #a0a0a0;
 }
 
 /* Responsive Design */
-
-/* Laptop */
 @media (max-width: 1366px) {
   html {
-    font-size: 76%;
+    font-size: 75%;
   }
 }
-/* Tablet */
+
 @media (max-width: 768px) {
   html {
-    font-size: 63%;
+    font-size: 62.5%;
   }
 
   #hamburger-menu {
@@ -396,8 +415,8 @@ footer .credit a {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: white;
-    width: 30rem;
+    background-color: #141022;
+    width: 25rem;
     height: 100vh;
     transition: 0.3s ease;
   }
@@ -407,61 +426,19 @@ footer .credit a {
   }
 
   .navbar .navbar-nav a {
-    color: #0a0a0a;
+    color: white;
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
-    font-size: 2rem;
-  }
-
-  .navbar .navbar-nav a::after {
-    transform-origin: 0 0;
-  }
-  .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.2);
+    font-size: 1.6rem;
   }
 
   .hero {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    padding: 10rem 7% 3rem;
+    padding-top: 10rem;
   }
 
-  .hero .content {
-    width: 100%;
-    max-width: 60rem;
-    flex: none;
-  }
-
-  .hero .hero-image {
-    width: 100%;
-    flex: none;
-    display: flex;
-    justify-content: center;
-  }
-  .about .row {
-    flex-wrap: wrap;
-  }
-
-  .about .row .about-img img {
-    height: 24rem;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .about .row .content {
-    padding: 0;
-  }
-
-  .about .row .content h3 {
-    margin-top: 1rem;
-    font-size: 2rem;
-  }
-  .about .row .content p {
-    font-size: 1.6rem;
-  }
   .course .row {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -469,25 +446,14 @@ footer .credit a {
   .contact .row {
     flex-wrap: wrap;
   }
-
-  .contact .row .map {
-    height: 30rem;
-  }
-  .contact .row .form {
-    padding: 0;
-  }
 }
-/* Mobile */
+
 @media (max-width: 450px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 
   .course .row {
     grid-template-columns: 1fr;
-  }
-
-  .menu-card img {
-    height: 200px;
   }
 }
